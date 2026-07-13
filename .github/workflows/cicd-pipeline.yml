@@ -52,7 +52,7 @@ jobs:
 
   deploy-production:
     environment: Production
-    needs: deploy-staging
+    needs: test-staging
     runs-on: ubuntu-latest
     steps:
       - run: |
